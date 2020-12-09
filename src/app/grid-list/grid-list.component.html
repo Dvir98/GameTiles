@@ -1,0 +1,17 @@
+<!-- <div class="container row-5" *ngFor="let i of board; let I = index">       
+    <span *ngFor="let j of i; let J = index"> 
+        <button class="cell" buttonDisabled [ngStyle]="{'background-color':changeColor(board[I][J].status)}" (click)="clickButton(I , J)" type="button" [disabled]="disabled"> ( {{I}},{{J}} )</button>
+    </span> 
+</div> -->
+
+
+<div class="main">
+    <div class="space"> </div>
+    <mat-grid-list cols={{col}} rowHeight={{height}} *ngFor="let i of board; let I = index">  
+        <mat-grid-tile *ngFor="let j of i; let J = index"
+            [colspan]="j.cols"
+            [rowspan]="j.rows">
+            <button class="cell" buttonDisabled [ngStyle]="{'background-color':changeColor(board[I][J].status)}" (click)="clickButton(I , J)" type="button" [disabled]="disabled"> ( {{I}},{{J}} )</button>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

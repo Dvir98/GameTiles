@@ -1,0 +1,40 @@
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #334953;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+    margin-left: 30px;
+  }
+
+  .level {
+    margin-left: 30px;
+    margin-top: -11px;
+  }
+
+  .buttonRefresh {
+    margin-left: 15px;
+  }
+
+  .Up {
+    margin-top: -11px;
+  }
+
+  .Life {
+    color: red;
+  }

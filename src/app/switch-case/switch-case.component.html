@@ -1,0 +1,21 @@
+<!-- <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
+
+<div class = "main"> 
+    <div class="header">
+        <div class="text">Memory Tiles</div>
+    </div>
+
+    <div class="body">
+        <button (click)="enlargeBoard()">resize</button>
+        <div class="AllButton" *ngFor="let i of board; let I = index">
+            <br>
+            <span *ngFor="let j of i; let J = index"> 
+                <button class="Square" buttonDisabled [ngStyle]="{'background-color':changeColor(board[I][J].status)}" (click)="clickButton(I , J)" type="button" [disabled]="disabled"> ( {{I}},{{J}} )</button> 
+            </span> 
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="text"> Score of play {{Score}} </div> 
+    </div>   
+</div>

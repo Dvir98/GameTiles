@@ -1,0 +1,48 @@
+.main {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.main .header {
+    /* float: left; */
+    overflow: hidden;
+    position: relative;
+}
+
+mat-toolbar {
+    float: left !important ;
+}
+
+mat-icon {
+    float: left !important ;
+}
+
+.right {
+    float: left !important ;
+}
+
+.cell {
+width: 100%;
+height: 100%;
+}
+
+.space {
+    width: 100%;
+    height: 1%;
+    background-color: rgb(224, 224, 224); 
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .marginRight {
+    padding-right: 25px;
+  }
+  
+  /* .right {
+      text-align: right;
+     float: right;
+  }
+   */

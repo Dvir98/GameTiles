@@ -1,0 +1,42 @@
+<!-- <app-main-screen></app-main-screen> -->
+
+<!-- <app-board></app-board> -->
+<!-- <app-gavriel> </app-gavriel> -->
+<!-- <app-guide></app-guide> -->
+<!-- <app-switch-case></app-switch-case> -->
+<!-- withObject to Large board -->
+<!-- <app-play></app-play> -->
+
+
+<!-- <app-login-screen></app-login-screen> -->
+
+
+<div class="header"> 
+  <mat-toolbar color="primary"> 
+      <span class="Up"> MemoryTiles </span>
+      <span class="level"> Level: {{Level -2}}</span>  
+      <span class="example-spacer">
+        <p> score: {{Score}}</p> 
+      </span>
+
+      <!-- Button in toolbar -->
+      <!-- <button class="nav-item nav-link-edit" [routerLink]="['/LoginScreen']">home</button >
+        <button class="nav-item nav-link-edit" [routerLink]="['/PlayTilsGridList']">PlayList</button > -->
+      <div class="Life" *ngFor="let life of Array; let i = index">
+        <span *ngIf="life"> 
+          <span *ngIf="i != 4">
+            <mat-icon>favorite</mat-icon>
+          </span> 
+        </span>     
+    </div>    
+    <button class="buttonRefresh" mat-raised-button (click)="refresh()">refresh</button>
+  </mat-toolbar>
+   <router-outlet></router-outlet>   
+</div>
+
+<!-- Normal routing -->
+  <!-- <nav>
+    <a routerLink="/LoginScreen">Main screen</a>
+    <a routerLink="/PlayTilsGridList" routerLinkActive="active">Start play</a>
+  </nav> 
+  <router-outlet></router-outlet> -->

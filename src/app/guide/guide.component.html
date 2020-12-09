@@ -1,0 +1,11 @@
+<button (click)="myColorBoard()">Stop time</button>
+
+<div *ngFor="let i of Board; let I = index">
+    <br>
+    <span *ngFor="let j of i; let J = index"> 
+        <button  id= {{I}}{{J}} type="button" [ngClass]="{style: Board[0][1] == '01'  , style1: Board[1][2] == '12'}" > ( {{I}},{{J}} )</button>
+    </span> 
+</div>
+<br>
+
+

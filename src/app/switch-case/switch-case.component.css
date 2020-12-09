@@ -1,0 +1,81 @@
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+    float: left;
+}
+
+.main .header {
+    float: left;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(107, 103, 145);
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.main .header .text {
+    float: left;
+    margin-left: 40%;
+    width: 20%;
+    /* height: 20%; */
+    border: 1px solid  purple;
+    background-color: mediumpurple;
+    position: absolute;
+    top: 50%;
+    font-size: 3vmin;
+    text-align: center;
+    animation: do_salta 2s;
+}
+
+.main .body {
+    float: left;
+    width:100%;
+    height: 75%;
+    overflow: hidden;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    width:100%;
+    height: 75%; 
+    margin-left: 0%;
+}
+
+.main .body .AllButton {
+    background-color: rosybrown;
+    float: left;
+    width:100%;
+    height: 15%;
+    border-left: 10%; 
+    border-right: 10%;
+    margin-top: 0%;
+}
+
+.main .body .Square{ 
+    width:20%;
+    height:70%; 
+}
+
+.main .footer {
+    float: left;
+    width: 100%;
+    height: 10%;
+    background-color: #6b679175;
+    overflow: hidden;
+}
+
+.main .footer .text {
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 2%;
+}
+
+/* .main .body .Table {
+
+} */
+/* .rectangle{
+    width:10%;
+    height: 100px; 
+} */
